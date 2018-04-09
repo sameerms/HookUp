@@ -24,9 +24,10 @@ const styles = StyleSheet.create({
          alignItems : 'center'
     },
     logoteksten : {
+        marginVertical : 15,
         backgroundColor : '#76ffff',
         fontSize : 30,
-        color : 'rgba(255,255,255,0.8)',
+        color : 'rgba(31,152,152,0.8)',
         justifyContent : 'center',
          alignItems : 'center'
     }
