@@ -8,6 +8,7 @@ import {
 } from 'react-native';
 
 import Logo from '../components/Logo'
+import Form from '../components/Form'
 
 export default class Login extends Component<{}> {
     render() {
@@ -18,6 +19,7 @@ export default class Login extends Component<{}> {
       barStyle="light-content"
         />
       <Logo/>
+      <Form/>
         </View>
         )
     }
