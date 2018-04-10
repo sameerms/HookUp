@@ -5,7 +5,8 @@ import {
   Text,
   View,
   Image,
-  TextInput
+  TextInput, 
+  TouchableOpacity
 } from 'react-native';
 
 export default class Form extends Component<{}> {
@@ -20,6 +21,11 @@ export default class Form extends Component<{}> {
       underlineColorAndroid = 'rgba(255,255,255,1)'
       placeholder = 'Passord'
       placeholderTextColor = '#ffffff'/>
+      <TouchableOpacity style = {styles.loginButton}>
+      <Text style = {styles.loginbuttonTekst}>Login</Text>
+      </TouchableOpacity>
+
+
     </View>
         )
     }
@@ -36,7 +42,24 @@ const styles = StyleSheet.create({
         borderRadius : 25,
         paddingHorizontal : 16,
         fontSize : 16,
-        color : '#ffffff'
-
+        color : '#ffffff',
+        marginVertical : 7
+    },
+    loginButton:{
+        width : 300,
+        backgroundColor : 'rgba(76, 99, 214,0.85)',
+        borderRadius : 25,
+        justifyContent : 'center',
+        alignItems : 'center'
+        
+    },
+    loginbuttonTekst: {
+        fontSize : 16,
+        fontWeight : '500',
+        paddingHorizontal : 16,
+        fontSize : 16,
+        color : '#ffffff',
+        marginVertical : 7
+        
     }
 })
