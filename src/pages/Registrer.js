@@ -10,23 +10,22 @@ import {
 
 import Logo from '../components/Logo'
 import Form from '../components/Form'
-
 import {Actions} from 'react-native-router-flux';
 
-export default class Login extends Component<{}> {
-    registrerer(){
-       
-        Actions.registrer()
+export default class Registrer extends Component<{}> {
+    gotilbake(){
+       Actions.pop();
+
     }
     render() {
         return(
             <View style={styles.bigblue}> 
-             <Logo/>
-             <Form type = "Login"/>
+            <Logo/>
+             <Form type = "Registrer"/>
              <View style= {styles.signupTekstinnhold}>
-                <Text style = {styles.signupTeksten}>Har ikke allerede en konto? </Text>
-                <TouchableOpacity onPress = {this.registrerer}>
-                <Text style = {styles.signupButton}>Registrer </Text></TouchableOpacity>
+                <Text style = {styles.signupTeksten}>Har allerede en konto? </Text>
+                <TouchableOpacity onPress = {this.gotilbake}>
+                <Text style = {styles.signupButton}> Logg inn </Text></TouchableOpacity>
             </View>
             </View>
 

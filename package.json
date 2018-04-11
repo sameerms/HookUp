@@ -4,12 +4,14 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "postinstall": "rndebugger-open"
   },
   "dependencies": {
     "react": "16.3.0-alpha.1",
     "react-native": "0.54.4",
     "react-native-in-app-notification": "^2.2.0",
+    "react-native-router-flux": "^4.0.0-beta.28",
     "react-swipeable": "^4.2.1"
   },
   "devDependencies": {

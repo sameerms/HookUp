@@ -13,8 +13,10 @@ import {
   StatusBar
 } from 'react-native';
 
-import Login from './src/pages/Login'   ;
 
+import Routes from './src/Routes' ;
+import Registrer from './src/pages/Registrer';
+import Login from './src/pages/Login'   ;
 
 
 export default class App extends Component<{}> {
@@ -25,7 +27,7 @@ export default class App extends Component<{}> {
       backgroundColor='#006064'
       barStyle="light-content"
         />
-      <Login/>
+        <Login/>
         </View>
     );
   }
